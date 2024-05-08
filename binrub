@@ -1,0 +1,76 @@
+#!/usr/bin/ruby
+
+require './signatures.rb'
+require './entropy.rb'
+
+def usage(exit_code, msg = "")
+    if msg != ""
+	puts msg
+    end
+    puts "USAGE: #{File.basename($PROGRAM_NAME)} [-E] [-m <magic_file>] <file1> [file2] ... "
+    exit exit_code
+end
+
+def display_header(command)
+    if command == "signatures"
+	spec = "DESCRIPTION"
+    elsif command == "entropy"
+	spec = "ENTROPY"
+    end
+    puts
+    puts "DECIMAL\t\tHEXADECIMAL\t#{spec}"
+    puts "--------------------------------------------------------------------------------"
+end
+
+def iterate_command_on_files(files, command, signatures = "")
+    files.each do |f|
+	if command == "signatures"
+	    display_header(command)
+	    browse_file(f, signatures)
+	elsif command == "entropy"
+	    display_header(command)
+	    shannon_entropy_file(f)
+	end
+    end
+end
+
+def harvest_files()
+    # Harvest every valid file provided in arguments
+    files = []
+    ARGV.each do |arg|
+	if File.file?(arg)
+	    files.append(arg)
+    	end
+    end
+    if files.length == 0
+        puts "ERROR: no file provided."
+        usage(1)
+    end
+    return files
+end
+
+# Check options
+OPTS = ARGV.join(' ').scan(/--?([^\s]+)/)
+
+if OPTS.include? ['help']
+    usage(0)
+elsif ARGV.length == 0 # Check at least one argument or one file is provided
+    puts "ERROR: no argument provided."
+    usage(1)
+else
+    files = harvest_files()
+end
+
+if  (OPTS.include? ['E']) || (OPTS.include? ['entropy'])
+    iterate_command_on_files(files, "entropy")
+else
+    magic_file = File.dirname(__FILE__) + "/" + "magic" # default magic file location
+    if (OPTS.include? ['m']) || (OPTS.include? ['magic'])
+	SUB_OPTS = ARGV.join(' ').scan(/--?(m|magic)(\s+|=)([^\s]+)/)
+	if File.file? SUB_OPTS[0][2]
+	    magic_file = SUB_OPTS[0][2]
+	    files.delete_at(files.index magic_file) # remove magic file once from files found
+	end
+    end
+    iterate_command_on_files(files, "signatures", signatures = magic_file)
+end

@@ -1,0 +1,268 @@
+# FILE SIGNATURE TABLE
+# Hex signature	Offset	Description
+# Tab separated
+
+# Personnal adds
+55 42 49 21	0	UBI volume ID header
+55 42 49 23	0	UBI erase count header
+06 10 18 31	0	UBIFS filesystem
+19 85	0	JFFS2 filesystem, big endian
+85 19	0	JFFS2 filesystem, little endian
+
+# From Wikipedia
+25 50 44 46 2D	0	PDF document
+23 21	0	Script or data to be passed to the program following the shebang (#!)
+02 00 5a 57 52 54 00 00 00 00 00 00 00 00 00 00 	0	Claris Works word processing doc
+00 00 02 00 06 04 06 00 08 00 00 00 00 00 	0	Lotus 1-2-3 spreadsheet (v1) file
+00 00 1A 00 00 10 04 00 00 00 00 00 	0	Lotus 1-2-3 spreadsheet (v3) file
+00 00 1A 00 02 10 04 00 00 00 00 00 	0	Lotus 1-2-3 spreadsheet (v4, v5) file
+00 00 1A 00 05 10 04 	0	Lotus 1-2-3 spreadsheet (v9) file
+00 00 03 F3 	0	Amiga Hunk executable file
+50 57 53 33 	0	Password Gorilla Password Database
+0A 0D 0D 0A 	0	PCAP Next Generation Dump File Format
+ED AB EE DB 	0	RedHat Package Manager (RPM) package
+53 50 30 31 	0	Amazon Kindle Update Package
+49 57 41 44 	0	internal WAD (main resource file of Doom)
+BE BA FE CA 	0	Palm Desktop Calendar Archive
+00 01 42 44 	0	Palm Desktop To Do Archive
+00 01 44 54 	0	Palm Desktop Calendar Archive
+54 44 46 24 	0	Telegram Desktop File
+54 44 45 46 	0	Telegram Desktop Encrypted File
+00 01 00 00 	0	Palm Desktop Data File (Access format)
+00 00 01 00 	0	Computer icon encoded in ICO file format
+69 63 6e 73 	0	Apple Icon Image format
+66 74 79 70 33 67 	4	3rd Generation Partnership Project 3GPP and 3GPP2 multimedia files
+66 74 79 70 68 65 69 6366 74 79 70 6d	4	High Efficiency Image Container (HEIC)
+1F 9D 	0	compressed file (often tar zip) using Lempel-Ziv-Welch algorithm
+1F A0 	0	Compressed file (often tar zip) using LZH algorithm
+2D 68 6C 30 2D 	2	Lempel Ziv Huffman archive file Method 0 (No compression)
+2D 68 6C 35 2D 	2	Lempel Ziv Huffman archive file Method 5 (8 KiB sliding window)
+42 41 43 4B 4D 49 4B 45 44 49 53 4B 	0	AmiBack Amiga Backup data file
+49 4E 44 58 	0	AmiBack Amiga Backup index file
+62 70 6C 69 73 74 	0	Binary Property List file
+42 5A 68 	0	Compressed file using Bzip2 algorithm
+47 49 46 38 37 61 47 49 46 38 39 61 	0	Image file encoded in the Graphics Interchange Format (GIF)
+49 49 2A 00 10 00 00 00 43 52 	0	Canon RAW Format Version 2 Canon's RAW format is based on TIFF.
+80 2A 5F D7 	0	Kodak Cineon image
+52 4E 43 01 52 4E 43 02 	0	Compressed file using Rob Northen Compression (version 1 and 2) algorithm
+4E 55 52 55 49 4D 47 4E 55 52 55 50 41 4C 	0	nuru ASCII/ANSI image and palette files
+76 2F 31 01 	0	OpenEXR image
+42 50 47 FB 	0	Better Portable Graphics format
+FF D8 FF DB 	0	JPEG raw or in the JFIF or Exif file format
+FF D8 FF EE 	0	JPEG raw or in the JFIF or Exif file format
+#FF D8 FF E1 ?? ?? 45 78 69 66 00 00 	0	JPEG raw or in the JFIF or Exif file format
+FF D8 FF E0 	0	JPEG raw or in the JFIF or Exif file format
+71 6f 69 66 	0	QOI - The “Quite OK Image Format”
+4C 5A 49 50 	0	lzip compressed file
+30 37 30 37 30 37 	0	cpio archive file
+4D 5A 	0	DOS MZ executable and its descendants (including NE and PE)
+5A 4D 	0	DOS ZM executable and its descendants (rare)
+52 61 72 21 1A 07 00 	0	Roshal ARchive compressed archive v1.50 onwards
+52 61 72 21 1A 07 01 00 	0	Roshal ARchive compressed archive v5.00 onwards
+7F 45 4C 46 	0	Executable and Linkable Format
+89 50 4E 47 0D 0A 1A 0A 	0	Image encoded in the Portable Network Graphics format
+#C9 	0	CP/M 3 and higher with overlays
+CA FE BA BE 	0	Java class file, Mach-O Fat Binary
+EF BB BF 	0	UTF-8 byte order mark, commonly seen in text files.
+FF FE 	0	UTF-16LE byte order mark, commonly seen in text files.
+FE FF 	0	UTF-16BE byte order mark, commonly seen in text files.
+FF FE 00 00 	0	UTF-32LE byte order mark for text
+00 00 FE FF 	0	UTF-32BE byte order mark for text
+2B 2F 76 38 2B 2F 76 39 2B 2F 76 2B 2B 2F 76 2F 	0	UTF-7 byte order mark for text
+0E FE FF 	0	SCSU byte order mark for text
+DD 73 66 73 	0	UTF-EBCDIC byte order mark for text
+FE ED FA CE 	0 	Mach-O binary (32-bit)
+FE ED FA CE 	4096 	Mach-O binary (32-bit)
+FE ED FA CF 	0 	Mach-O binary (64-bit)
+FE ED FA CF 	4096 	Mach-O binary (64-bit)
+FE ED FE ED 	0	JKS Javakey Store
+CE FA ED FE 	0	Mach-O binary (reverse byte ordering scheme, 32-bit)
+CF FA ED FE 	0	Mach-O binary (reverse byte ordering scheme, 64-bit)
+25 21 50 53 	0	PostScript document
+25 21 50 53 2D 41 64 6F 62 65 2D 33 2E 30 20 45 50 53 46 2D 33 2E 30 	0	Encapsulated PostScript file version 3.0
+25 21 50 53 2D 41 64 6F 62 65 2D 33 2E 31 20 45 50 53 46 2D 33 2E 30 	0	Encapsulated PostScript file version 3.1
+3F 5F 	0	Windows 3.x/95/98 Help file
+24 53 44 49 30 30 30 31 	0	System Deployment Image, a disk image format used by Microsoft
+4F 67 67 53 	0	Ogg, an open source media container format
+38 42 50 53 	0	Photoshop Document file, Adobe Photoshop's native file format
+49 44 33 	0	MP3 file with an ID3v2 container
+42 4D 	0	BMP file, a bitmap format used mostly in the Windows world
+43 44 30 30 31 	387785 	CD-i CD image file
+6D 61 69 6E 2E 62 73 	0	Nintendo Game & Watch image file
+4E 45 53 	0	Nintendo Entertainment System image file
+A0 32 41 A0 A0 A0 	91556 	Commodore 64 1541 disk image (D64 format)
+47 53 52 2D 31 35 34 31 	0	Commodore 64 1541 disk image (G64 format)
+A0 33 44 A0 A0 	0x61819 	Commodore 64 1581 disk image (D81 format)
+43 36 34 20 74 61 70 65 20 69 6D 61 67 65 20 66 69 6C 65 	0	Commodore 64 tape image
+43 36 34 20 43 41 52 54 52 49 44 47 45 20 20 20 	0	Commodore 64 cartridge image
+66 4C 61 43 	0	Free Lossless Audio Codec
+4D 54 68 64 	0	MIDI sound file
+D0 CF 11 E0 A1 B1 1A E1 	0	Compound File Binary Format, a container format defined by Microsoft COM. It can contain the equivalent of files and directories. It is used by Windows Installer and for documents in older versions of Microsoft Office. It can be used by other programs as well that rely on the COM and OLE API's.
+64 65 78 0A 30 33 35 00 	0	Dalvik Executable
+4B 44 4D 	0	VMDK files
+23 20 44 69 73 6B 20 44 65 73 63 72 69 70 74 6F 	0	VMware 4 Virtual Disk description file (split disk)
+43 72 32 34 	0	Google Chrome extension or packaged app
+41 47 44 33 	0	FreeHand 8 document
+45 52 02 00 00 00 	0	Roxio Toast disc image file
+8B 45 52 02 00 00 00 	0	Roxio Toast disc image file
+78 61 72 21 	0	eXtensible ARchive format
+50 4D 4F 43 43 4D 4F 43 	0	Windows Files And Settings Transfer Repository See also USMT 3.0 (Win XP) and USMT 4.0 (Win 7) User Guides
+4E 45 53 1A 	0	Nintendo Entertainment System ROM file
+#4F 41 52 ?? 	0	OAR file archive format, where ?? is the format version.
+74 6F 78 33 	0	Open source portable voxel file
+4D 4C 56 49 	0	Magic Lantern Video file
+44 43 4D 01 50 41 33 30 50 41 33 30 	0	Windows Update Binary Delta Compression file
+37 7A BC AF 27 1C 	0	7-Zip File Format
+1F 8B 	0	GZIP compressed file
+FD 37 7A 58 5A 00 	0	XZ compression utility using LZMA2 compression
+04 22 4D 18 	0	LZ4 Frame Format Remark: LZ4 block format does not offer any magic bytes.
+4D 53 43 46 	0	Microsoft Cabinet file
+53 5A 44 44 88 F0 27 33 	0	Microsoft compressed file in Quantum format, used prior to Windows XP. File can be decompressed using Extract.exe or Expand.exe distributed with earlier versions of Windows. After compression, the last character of the original filename extension is replaced with an underscore, e.g. ‘Setup.exe’ becomes ‘Setup.ex_’.
+46 4C 49 46 	0	Free Lossless Image Format
+1A 45 DF A3 	0	Matroska media container, including WebM
+4D 49 4C 20 	0	"SEAN : Session Analysis" Training file. Also used in compatible software "Rpw : Rowperfect for Windows" and "RP3W : ROWPERFECT3 for Windows".
+30 82 	0	DER encoded X.509 certificate
+2D 2D 2D 2D 2D 42 45 47 49 4E 20 43 45 52 54 49 46 49 43 41 54 45 2D 2D 2D 2D 2D 	0	PEM encoded X.509 certificate
+2D 2D 2D 2D 2D 42 45 47 49 4E 20 43 45 52 54 49 46 49 43 41 54 45 20 52 45 51 55 45 53 54 2D 2D 2D 2D 2D 	0	PEM encoded X.509 Certificate Signing Request
+2D 2D 2D 2D 2D 42 45 47 49 4E 20 50 52 49 56 41 54 45 20 4B 45 59 2D 2D 2D 2D 2D 	0	PEM encoded X.509 PKCS#8 private key
+2D 2D 2D 2D 2D 42 45 47 49 4E 20 44 53 41 20 50 52 49 56 41 54 45 20 4B 45 59 2D 2D 2D 2D 2D 	0	PEM encoded X.509 PKCS#1 DSA private key
+2D 2D 2D 2D 2D 42 45 47 49 4E 20 52 45 41 20 50 52 49 56 41 54 45 20 4B 45 59 2D 2D 2D 2D 2D 	0	PEM encoded X.509 PKCS#1 RSA private key
+50 75 54 54 59 2D 55 73 65 72 2D 4B 65 79 2D 46 69 6C 65 2D 32 3A 	0	PuTTY private key file version 2
+50 75 54 54 59 2D 55 73 65 72 2D 4B 65 79 2D 46 69 6C 65 2D 33 3A 	0	PuTTY private key file version 3
+2D 2D 2D 2D 2D 42 45 47 49 4E 20 4F 50 45 4E 53 53 48 20 50 52 49 56 41 54 45 20 4B 45 59 2D 2D 2D 2D 2D 	0	OpenSSH private key file
+2D 2D 2D 2D 2D 42 45 47 49 4E 20 53 53 48 32 20 4B 45 59 2D 2D 2D 2D 2D 	0	OpenSSH public key file
+44 49 43 4D 	128	DICOM Medical File Format
+77 4F 46 46 	0	WOFF File Format 1.0
+77 4F 46 32 	0	WOFF File Format 2.0
+00 61 73 6D 	0	WebAssembly binary format
+CF 84 01 	0	Lepton compressed JPEG image
+43 57 53 	0	Adobe Flash .swf
+46 57 53 	0	Adobe Flash .swf
+21 3C 61 72 63 68 3E 0A 	0	linux deb file
+#52 49 46 46 ?? ?? ?? ?? 57 45 42 50 	0	Google WebP image file, where ?? ?? ?? ?? is the file size. More information on WebP File Header
+27 05 19 56 	0	U-Boot / uImage. Das U-Boot Universal Boot Loader.
+7B 5C 72 74 66 31 	0	Rich Text Format
+54 41 50 45 	0	Microsoft Tape Format
+00 00 01 BA 	0	MPEG Program Stream (MPEG-1 Part 1 (essentially identical) and MPEG-2 Part 1)
+00 00 01 B3 	0	MPEG-1 video and MPEG-2 video (MPEG-1 Part 2 and MPEG-2 Part 2)
+66 74 79 70 69 73 6F 6D 	4	ISO Base Media file (MPEG-4)
+66 74 79 70 4D 53 4E 56 	4	MPEG-4 video file
+78 01 	0	Zlib compressed data, No Compression (no preset dictionary)
+78 5E 	0	Zlib compressed data, Best speed (no preset dictionary)
+78 9C 	0	Zlib compressed data, Default Compression (no preset dictionary)
+78 DA 	0	Zlib compressed data, Best Compression (no preset dictionary)
+78 20 	0	Zlib compressed data, No Compression (with preset dictionary)
+78 7D 	0	Zlib compressed data, Best speed (with preset dictionary)
+78 BB 	0	Zlib compressed data, Default Compression (with preset dictionary)
+78 F9 	0	Zlib compressed data, Best Compression (with preset dictionary)
+62 76 78 32 	0	LZFSE - Lempel-Ziv style data compression algorithm using Finite State Entropy coding. OSS by Apple.
+4F 52 43 	0	Apache ORC (Optimized Row Columnar) file format
+4F 62 6A 01 	0	Apache Avro binary file format
+53 45 51 36 	0	RCFile columnar file format
+3C 72 6F 62 6C 6F 78 21 	0	Roblox place file
+65 87 78 56 	0	PhotoCap Object Templates
+55 55 AA AA 	0	PhotoCap Vector
+78 56 34 	0	PhotoCap Template
+50 41 52 31 	0	Apache Parquet columnar file format
+45 4D 58 32 	0	Emulator Emaxsynth samples
+45 4D 55 33 	0	Emulator III synth samples
+1B 4C 75 61 	0	Lua bytecode
+#85 ?? ?? 03 	0	PGP file
+28 B5 2F FD 	0	Zstandard compress
+52 53 56 4B 44 41 54 41 	0	QuickZip rs compressed archive
+3A 29 0A 	0	Smile file
+4A 6F 79 21 	0	Preferred Executable Format
+31 0A 30 30 	0	SubRip File
+34 12 AA 55 	0	VPK file, used to store game data for some Source Engine games
+2A 2A 41 43 45 2A 2A 	7	ACE (compressed file format)[citation needed]
+60 EA 	0	ARJ
+49 53 63 28 	0	InstallShield CAB Archive File
+4B 57 41 4A 	0	Windows 3.1x Compressed File
+53 5A 44 44 	0	Windows 9x Compressed File
+5A 4F 4F 	0	Zoo (file format)
+50 31 0A 	0	Portable bitmap ASCII
+50 34 0A 	0	Portable bitmap binary
+50 32 0A 	0	Portable Gray Map ASCII
+50 35 0A 	0	Portable Gray Map binary
+50 33 0A 	0	Portable Pixmap ASCII
+50 36 0A 	0	Portable Pixmap binary
+D7 CD C6 9A 	0	Windows Metafile
+67 69 6D 70 20 78 63 66 	0	XCF (file format)
+2F 2A 20 58 50 4D 20 2A 2F 	0	X PixMap
+41 46 46 	0	Advanced Forensics Format
+45 56 46 32 	0	EnCase EWF version 2 format
+45 56 46 	0	EnCase EWF version 1 format
+51 46 49 	0	qcow file format
+46 4C 56 	0	Flash Video file
+63 6F 6E 65 63 74 69 78 	0	Windows Virtual PC Virtual Hard Disk file format
+76 68 64 78 66 69 6C 65 	0	Windows Virtual PC Windows 8 Virtual Hard Disk file format
+49 73 5A 21 	0	Compressed ISO image
+44 41 41 	0	Direct Access Archive PowerISO
+4C 66 4C 65 	0	Windows Event Viewer file format
+45 6C 66 46 69 6C 65 	0	Windows Event Viewer XML file format
+73 64 62 66 	8	Windows customized database
+50 4D 43 43 	0	Windows 3.x Program Manager Program Group file format
+4B 43 4D 53 	0	ICC profile
+72 65 67 66 	0	Windows Registry file
+21 42 44 4E 	0	Microsoft Outlook Personal Storage Table file
+44 52 41 43 4F 	0	3D model compressed with Google Draco
+47 52 49 42 	0	Gridded data (commonly weather observations or forecasts) in the WMO GRIB or GRIB2 format
+42 4C 45 4E 44 45 52 	0	Blender File Format
+00 00 00 0C 4A 58 4C 20 0D 0A 87 0A 	0	Image encoded in the JPEG XL format
+FF 0A 	0	Image encoded in the JPEG XL format
+00 01 00 00 00 	0	TrueType font
+4F 54 54 4F 	0	OpenType font
+23 25 4D 6F 64 75 6C 65 	0	Modulefile for Environment Modules
+21 2D 31 53 4C 4F 42 1F 	0	Slob (sorted list of blobs) is a read-only, compressed data store with dictionary-like interface
+AC ED 	0	Serialized Java Data
+43 72 65 61 74 69 76 65 20 56 6F 69 63 65 20 46 69 6C 65 1A 1A 00 	0	Creative Voice file
+2E 73 6E 64 	0	Au audio file format
+DB 0A CE 00 	0	OpenGL Iris Perfomer .PFB (Performer Fast Binary)
+48 5a 4c 52 00 00 00 18 	0	Noodlesoft Hazel
+46 4C 68 64 	0	FL Studio Project File
+31 30 4C 46 	0	FL Studio Mobile Project File
+52 4b 4d 43 32 31 30 	0	Vormetric Encryption DPM Version 2.1 Header
+00 01 00 00 4D 53 49 53 41 4D 20 44 61 74 61 62 61 73 65 	0	Microsoft Money file
+00 01 00 00 53 74 61 6E 64 61 72 64 20 41 43 45 20 44 42 	0	Microsoft Access 2007 Database
+00 01 00 00 53 74 61 6E 64 61 72 64 20 4A 65 74 20 44 42 	0	Microsoft Access Database
+01 FF 02 04 03 02 	0	Micrografx vector graphic file
+02 64 73 73 	0	Digital Speech Standard (Olympus, Grundig, & Phillips) v2
+03 64 73 73 	0	Digital Speech Standard (Olympus, Grundig, & Phillips) v3
+03 00 00 00 41 50 50 52 	0	Approach index file
+06 06 ED F5 D8 1D 46 E5 BD 31 EF E7 FE 74 B7 1D 	0	Adobe InDesign document
+07 53 4B 46 	0	SkinCrafter skin file
+07 64 74 32 64 64 74 64 	0	DesignTools 2D Design file
+0A 16 6F 72 67 2E 62 69 74 63 6F 69 6E 2E 70 72 	0	MultiBit Bitcoin wallet file
+0D 44 4F 43 	0	DeskMate Document file
+0E 4E 65 72 6F 49 53 4F 	0	Nero CD Compilation
+0E 57 4B 53 	0	DeskMate Worksheet
+0F 53 49 42 45 4C 49 55 53 	0	Sibelius Music - Score file
+23 20 4D 69 63 72 6F 73 6F 66 74 20 44 65 76 65 6C 6F 70 65 72 20 53 74 75 64 69 6F 	0	Microsoft Developer Studio project file
+23 21 41 4D 52 	0	Adaptive Multi-Rate ACELP (Algebraic Code Excited Linear Prediction) Codec, commonly audio format with GSM cell phones.
+23 21 53 49 4C 4B 0A 	0	Audio compression format developed by Skype
+23 3F 52 41 44 49 41 4E 43 45 0A 	0	Radiance High Dynamic Range image file
+23 40 7E 5E 	0	VBScript Encoded script
+0D F0 1D C0 	0	MikroTik WinBox Connection Database (Address Book)
+23 45 58 54 4D 33 55 	0	Multimedia playlist
+6D 64 66 00 	0	M2 Archive, used by game developer M2
+4B 50 4B 41 	0	Capcom RE Engine game data archives
+41 52 43 	0	Capcom MT Framework game data archives
+D0 4F 50 53 	0	Interleaf PrinterLeaf / WorldView document format (now Broadvision QuickSilver)
+6E 2B 31 00 	344	Single file NIfTI format, used extensively in biomedical imaging.
+6E 69 31 00 	344	Header file of a .hdr/.img pair in NIfTI format, used extensively in biomedical imaging.
+52 41 46 36 34 	0	Report Builder file from Digital Metaphors
+56 49 53 33 	0	Resource file Visionaire 3.x Engine
+4D 53 48 7C 42 53 48 7C 	0	Health Level Seven (HL7) Standard for electronic data exchange
+70 77 72 64 61 74 61 	0	SAP Power Monitor (version 1.1.0 and higher) data file
+1a 08 	0	ARC archive file
+2d 2d 2d 2d 2d 42 45 47 49 4e 20 50 47 50 20 50 55 42 4c 49 43 20 4b 45 49 20 42 4c 4f 43 4b 2d 2d 2d 2d 2d 	0	Armored PGP public key
+3a 42 61 73 65 20 	0	Windows 3.x - Windows 95 Help Contents
+#52 49 46 46 ?? ?? ?? ?? 56 44 52 4d 	0	VirtualDub
+#52 59 46 46 ?? ?? ?? ?? 54 52 49 44 	0	TrID
+#52 49 46 46 ?? ?? ?? ?? 73 68 77 34 	0	Corel SHOW! 4.0
+#52 49 46 46 ?? ?? ?? ?? 73 68 77 35 	0	Corel SHOW! 5.0
+#52 49 46 46 ?? ?? ?? ?? 73 68 72 35 	0	Corel SHOW! 5.0 player
+#52 49 46 46 ?? ?? ?? ?? 73 68 62 35 	0	Corel SHOW! 5.0 background
+#58 46 49 52 ?? ?? ?? ?? 4d 44 47 46 	0	Macromedia ShockWave
+#52 49 46 46 ?? ?? ?? ?? 52 4d 4d 50 	0	MacroMind Multimedia Movie or Microsoft Multimedia Movie
+41 53 54 4d 2d 45 35 37 	0	ASTM E57 3D file format
